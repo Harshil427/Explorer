@@ -9,7 +9,8 @@ import 'package:google_clone/widgets/search_tabs.dart';
 class SearchScreen extends StatelessWidget {
   final String searchQuery;
   final String start;
-  const SearchScreen({Key? key, required this.searchQuery, this.start = '0'})
+  const SearchScreen({Key? key,
+   required this.searchQuery, this.start = '0'})
       : super(key: key);
 
   @override
@@ -70,7 +71,8 @@ class SearchScreen extends StatelessWidget {
                           ),
                           // displaying the results
                           ListView.builder(
-                            physics: const NeverScrollableScrollPhysics(),
+                            physics: const 
+                            NeverScrollableScrollPhysics(),
                             shrinkWrap: true,
                             itemCount: snapshot.data?['items'].length,
                             itemBuilder: (context, index) {
@@ -95,8 +97,10 @@ class SearchScreen extends StatelessWidget {
                           SizedBox(
                             width: double.infinity,
                             child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment:
+                               MainAxisAlignment.center,
+                              crossAxisAlignment: 
+                              CrossAxisAlignment.center,
                               children: [
                                 TextButton(
                                     child: const Text(
@@ -114,7 +118,8 @@ class SearchScreen extends StatelessWidget {
                                               MaterialPageRoute(
                                                 builder: (context) =>
                                                     SearchScreen(
-                                                  searchQuery: searchQuery,
+                                                  searchQuery: 
+                                                  searchQuery,
                                                   start: (int.parse(start) - 10)
                                                       .toString(),
                                                 ),
@@ -136,7 +141,8 @@ class SearchScreen extends StatelessWidget {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => SearchScreen(
+                                        builder: (context) =>
+                                         SearchScreen(
                                           searchQuery: searchQuery,
                                           start: (int.parse(start) + 10)
                                               .toString(),
