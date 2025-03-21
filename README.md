@@ -1,5 +1,5 @@
 ## Google Clone
-- A completely Responsive Google Clone- Works on Android, iOS & Web!
+- A completely Responsive Google Clone- Works on Android, iOS and Web!
 
 # Features
 - Responsive Google UI
